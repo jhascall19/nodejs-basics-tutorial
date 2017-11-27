@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = { //automatically exports each function!@#$%^&*()
     myFunction: function () {
         console.log('Exported!');
     },
