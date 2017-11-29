@@ -1,10 +1,10 @@
 var url = require('url');
-var fs = require('fs');
+var fs = require('fs'); //exporting a function useful in node JS
 
 function renderHTML(path, response) {
-    fs.readFile(path, null, function(error, data) {
+    fs.readFile(path, null, function(error, data) { //filesystem using the read file method
         if (error) {
-            response.writeHead(404);
+            response.writeHead(404); 
             response.write('File not found!');
         } else {
             response.write(data);

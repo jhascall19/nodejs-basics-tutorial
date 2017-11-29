@@ -7,4 +7,4 @@ function myFunction() { //goes to app.js
 var myString = 'String!';
 
 module.exports.myFunction = myFunction; //this allows it to be exported
-module.exports.myString = myString;
+module.exports.myString = myString; //same things
