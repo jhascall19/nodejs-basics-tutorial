@@ -19,14 +19,14 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+var server = http.createServer(app); //passing express app as a handler of our sutff
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
-server.on('error', onError);
+server.listen(port); //the server will continously listen
+server.on('error', onError); //will call an error if theres an error
 server.on('listening', onListening);
 
 /**
