@@ -1,11 +1,11 @@
 <h1>{{ title }}</h1>
-<p>Welcome to {{ title }}</p>
-{{# if condition }}
+<p>Welcome to {{ title }}</p> calls to title
+{{# if condition }} //will render through handlebars, not jade!!!
     Condition is met
 {{ else }}
    Condition not met
 {{/if}}
-
+//thisis the calls based on #
 {{# each anyArray as |val key|}}
     {{ key }}: {{ val }}
 {{/each}}
