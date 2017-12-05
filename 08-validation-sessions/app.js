@@ -5,8 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('express-handlebars');
-var expressValidator = require('express-validator');
-var expressSession = require('express-session');
+var expressValidator = require('express-validator'); //new requirements
+var expressSession = require('express-session'); //same
 
 var routes = require('./routes/index');
 
@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(expressValidator());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(expressSession({secret: 'max', saveUninitialized: false, resave: false}));
+app.use(expressSession({secret: 'max', saveUninitialized: false, resave: false})); //passes in new object... secret
 
 app.use('/', routes);
 
@@ -59,6 +59,6 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
+//he goes to github and looks for places to store his sessions, purchases
 
 module.exports = app;
