@@ -1,4 +1,8 @@
-var express = require('express');
+var express = require('express'); //./mongodb runs a server and you can check ecach database.. instead of writing on a doc
+//can insert data into the mongoDb directly, like usernames and passwords
+//I downloaded mongo db
+
+//I think If i needed to do this, with a good amount of help, I could.
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
